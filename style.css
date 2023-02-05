@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.header {
+    display: flex;
+    margin: 1rem 10rem;
+}
+.tls{
+    font-size: 50px;
+    font-style: Copperplate, Papyrus, fantasy;
+}
+
+.editor {
+    margin: 1rem 10rem;
+}
+.hd{
+    display: flex;
+    justify-content: space-between;
+}
+.input-header {
+    margin: 3rem 30rem;
+    font-weight: bold;
+    font-size:30px;
+}
+.box{
+    display: flex;
+    justify-content: space-around;
+}
+.editor {
+    height: 50vh;
+    margin: 0 10rem;
+
+}
+
+#input {
+    width: 40vw;
+    height: 40rem;
+    margin: 1rem 11rem;
+    padding: 1.2rem;
+    font-size: 2.5rem;
+    border: 2px solid black;
+}
+
+.output-header {
+    margin: 2rem 30rem;
+    font-weight: bold;
+    font-size:30px;
+}
+
+.py {
+    margin-left: 0px;
+    margin-right: 10px;
+    padding-right: 0px;
+    width: 60px;
+}
+
+.code_output {
+    margin: 2rem 10rem;
+    width: 40vw;
+    border: 2px solid black;
+    height: 40rem;
+    font-size: 2.5rem;
+    padding: 1.2rem;
+    background-color: white;
+}
+.run {
+
+    margin-top: 150px;
+    margin-right: 50px;
+    margin-left: 50px;
+    width: 10rem;
+    height: 5rem; 
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .run:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+  }
+  
+  .run:hover:after {
+    transform: translate(0, 0);
+  }
+  
+  .run:active {
+    background-color: #ffdeda;
+    outline: 0;
+  }
+  
+  .run:hover {
+    outline: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .run {
+      padding: 0 40px;
+    }
+  }
